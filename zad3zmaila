@@ -1,0 +1,42 @@
+Cel badania
+Celem analizy było sprawdzenie, czy natężenie niebieskiego światła ma wpływ na poziom kortyzolu we krwi.
+W eksperymencie uczestnicy zostali podzieleni na dwie grupy:
+	grupę poddaną działaniu niskiego natężenia światła (11 osób)
+	oraz grupę poddaną działaniu wysokiego natężenia światła (17 osób).
+Po ekspozycji zmierzono poziom kortyzolu, a następnie porównano średnie wartości w obu grupach.
+________________________________________
+Hipotezy statystyczne
+	H_0: natężenie światła nie wpływa na poziom kortyzolu (różnice między grupami są przypadkowe).
+	H_1: natężenie światła wpływa na poziom kortyzolu (średnie poziomy różnią się istotnie).
+________________________________________
+Metoda
+Zastosowano test permutacyjny dla zmiennych niezależnych.
+Wszystkie 28 wyników połączono w jeden zbiór, a następnie wielokrotnie (10 000 razy) losowano z niego 11 wyników do pierwszej grupy, a pozostałe 17 przypisywano do drugiej grupy.
+Dla każdej permutacji obliczano różnicę średnich poziomów kortyzolu między grupami.
+Uzyskano w ten sposób rozkład różnic, który odzwierciedla wartości oczekiwane przy braku efektu (hipoteza zerowa).
+Na podstawie tego rozkładu:
+	wyznaczono 95% przedział permutacyjny (od 2,5 do 97,5 percentyla),
+	obliczono wartość p jako odsetek permutacji, w których różnica średnich była większa lub równa różnicy zaobserwowanej.
+________________________________________
+Wyniki
+Wskaźnik	Wartość
+Średni poziom kortyzolu (niska intensywność)	
+Średni poziom kortyzolu (wysoka intensywność)	
+Różnica średnich (obserwowana)	
+95% przedział permutacyjny dla różnicy średnich	
+Wartość p (dwustronna)	
+________________________________________
+Interpretacja wyników
+Otrzymana wartość p=  jest mniejsza niż przyjęty poziom istotności α=0.05.
+Oznacza to, że prawdopodobieństwo uzyskania tak dużej różnicy średnich przypadkiem (przy założeniu, że światło nie ma wpływu) jest bardzo małe — ok. 1,6%.
+W związku z tym odrzucamy hipotezę zerową H_0na poziomie istotności 0.05.
+________________________________________
+Wniosek merytoryczny
+Uzyskane wyniki wskazują, że natężenie niebieskiego światła ma istotny statystycznie wpływ na poziom kortyzolu we krwi.
+Osoby narażone na wyższe natężenie światła wykazywały niższy średni poziom kortyzolu w porównaniu z osobami w grupie niskiego natężenia.
+Sugeruje to, że silniejsze światło może przyczyniać się do obniżenia poziomu stresu (mniejszego wydzielania kortyzolu).
+________________________________________
+Uwagi końcowe
+Test permutacyjny pozwala ocenić istotność różnic bez założeń o normalności rozkładu czy równości wariancji.
+Jest szczególnie przydatny przy małych próbach i wtedy, gdy dane mogą mieć nietypowy rozkład.
+
