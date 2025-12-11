@@ -4,39 +4,7 @@ Cel: przewidywanie czesnego dla studentów spoza stanu (Outstate) na podstawie p
 
 (a) Podział danych i selekcja cech
 
-Podziel dane na zbiór treningowy i zbiór testowy (np. 70% trening, 30% test).
-
-Użyj forward stepwise selection (selekcja krokowa do przodu) na zbiorze treningowym:
-
-Celem jest wybranie tylko tych zmiennych, które naprawdę pomagają przewidzieć Outstate.
-
-Zaczynamy od pustego modelu i dodajemy po jednej zmiennej w każdej iteracji, wybierając tę, która najbardziej poprawia dopasowanie modelu.
-
-Kończymy, gdy żadna zmienna nie poprawia modelu.
-
-Efekt: lista zmiennych, które będą użyte w modelu GAM.
-
 (b) Dopasowanie GAM i wykresy
-
-Dopasuj GAM (Generalized Additive Model) na zbiorze treningowym.
-
-Zmienna objaśniana: Outstate.
-
-Predyktory: tylko te wybrane w kroku (a).
-
-GAM pozwala uchwycić nieliniowe zależności między zmiennymi a czesnym.
-
-Wygeneruj wykresy partial dependence dla każdej zmiennej:
-
-Pokażą, jak zmiana wartości zmiennej wpływa na przewidywane czesne.
-
-Możesz od razu ocenić, które zmienne mają efekt liniowy, a które nieliniowy.
-
-Wyjaśnij wyniki:
-
-Które zmienne mają największy wpływ na czesne?
-
-Czy wpływ jest liniowy czy nieliniowy?
 
 (c) Ocena modelu na zbiorze testowym
 
@@ -46,31 +14,8 @@ RMSE: średni błąd predykcji w jednostkach czesnego.
 
 R²: jaka część zmienności czesnego została wyjaśniona przez model.
 
-Porównaj wyniki:
-
-Czy model dobrze przewiduje czesne na nowych danych?
-
-Czy uwzględnienie nieliniowości w GAM poprawiło predykcję w porównaniu do prostego modelu liniowego?
-
 (d) Ocena nieliniowości
 
-Na podstawie wykresów partial dependence i ewentualnie p-values:
-
-Zidentyfikuj zmienne, które mają nieliniowy wpływ na Outstate.
-
-Wykresy zakrzywione → nieliniowe zależności.
-
-Płaskie, prawie liniowe krzywe → efekt liniowy.
-
-Podsumowanie po polsku
-
-Krok (a) = wybór najważniejszych zmiennych metodą forward stepwise.
-
-Krok (b) = dopasowanie GAM i analiza kształtu funkcji zależności.
-
-Krok (c) = sprawdzenie jakości modelu na danych testowych (RMSE, R²).
-
-Krok (d) = wskazanie zmiennych z nieliniowym wpływem.
 Na początku wczytałem dane z pliku College.csv. Zmienną, którą chcemy przewidzieć, jest Outstate, 
 czyli czesne dla studentów spoza stanu. Pozostałe kolumny traktowałem jako predyktory,
 a kolumnę Private zamieniłem na wartości 0 i 1, żeby można ją było użyć w modelu.
