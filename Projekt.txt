@@ -1,0 +1,19 @@
+Klasyfikacja wieloetapowa
+1. Wczytać dane
+2. Zapoznanie się z danymi:
+a) ile cech, jakie i za co odpowiadają
+b) wyrzucamy dane, które są nieistotne
+c) puste wiersze- wykres braków
+d) cechy numeryczne z nich robimy korelacje - boxplot
+e) rozkład klas wyjściowych
+f) macierz korelacji
+g) vif - porównywanie cech, czy jest współliniowość
+3. Trenowanie modelu:
+a) wybieramy model, do tego co nam wyszło
+b) tak ze dwa modele
+c) uczymy modele, dzielimy na zbiory, trenujemy modele
+d) optuna- dobieramy hiperparametry, pipeline, k-foldy, crossvalidation
+e) metryka - wskaźnik co ważne-cross walidacja
+f) k- najlepszych parametrów do wybrania, select k-Best-pipeline
+g) skalowanie danych, jeśli modele liniowe-pipeline
+4) Wyniki, porównanie modeli
